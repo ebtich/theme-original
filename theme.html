@@ -285,11 +285,11 @@
   </ul>
 </nav>
 
-           * <ul class="tags">
-           *  {% for tag in site.tags %}
-           *    <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
-           *  {% endfor %}
-           *</ul>
+           <ul class="tags">
+            {% for tag in site.tags %}
+             <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+            {% endfor %}
+           </ul>
             {% endif %}
           </span>
         {% endif %}
