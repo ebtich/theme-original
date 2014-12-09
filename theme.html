@@ -278,17 +278,17 @@
             <nav class="categories">
   <h4>Categories</h4>
   <ul>
-    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a></li>
-    <li><a href="/tag/web" class="{{ set_active('/tag/web') }}">Web</a></li>
-    <li><a href="/tag/ios" class="{{ set_active('/tag/ios') }}">iOS</a></li>
-    <li><a href="/tag/android" class="{{ set_active('/tag/android') }}">Android</a></li>
+    <li><a href="/tag/spiritual" class="{{ set_active('/tag/design') }}">Spiritual</a></li>
+    <li><a href="/tag/Tech" class="{{ set_active('/tag/web') }}">Tech</a></li>
+    <li><a href="/tag/Fitness" class="{{ set_active('/tag/ios') }}">Fitness</a></li>
+    <li><a href="/tag/Food" class="{{ set_active('/tag/android') }}">Food</a></li>
   </ul>
 </nav>
 
            <ul class="tags">
-            {% for tag in site.tags %}
-             <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
-            {% endfor %}
+            <{% for tag in site.tags %}>
+             <<li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>>
+            <{% endfor %}>
            </ul>
             {% endif %}
           </span>
