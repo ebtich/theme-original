@@ -279,17 +279,17 @@
   <h4>Categories</h4>
   <ul>
     <li><a href="/tag/spiritual" class="{{ set_active('/tag/design') }}">Spiritual</a></li>
-    <li><a href="/tag/Tech" class="{{ set_active('/tag/web') }}">Tech</a></li>
-    <li><a href="/tag/Fitness" class="{{ set_active('/tag/ios') }}">Fitness</a></li>
-    <li><a href="/tag/Food" class="{{ set_active('/tag/android') }}">Food</a></li>
+    <li><a href="/tag/tech" class="{{ set_active('/tag/web') }}">Tech</a></li>
+    <li><a href="/tag/fitness" class="{{ set_active('/tag/ios') }}">Fitness</a></li>
+    <li><a href="/tag/food" class="{{ set_active('/tag/android') }}">Food</a></li>
   </ul>
 </nav>
 
-           <ul class="tags">
-            <{% for tag in site.tags %}>
-             <<li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>>
-            <{% endfor %}>
-           </ul>
+           <!--<ul class="tags">
+            {% for tag in site.tags %}
+             <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+            {% endfor %}
+           </ul>-->
             {% endif %}
           </span>
         {% endif %}
